@@ -1,50 +1,11 @@
-## SimpleBars
+https://github.com/MordWraith/SimpleBars
 
-**Author:** Reynbow (GameHelper2 port: MordWraith)  
-**Source:** https://github.com/MordWraith/SimpleBars  
-**Upstream:** https://github.com/Reynbow/simplebars  
-**Compatible with:** [Gordin/GameHelper2](https://github.com/Gordin/GameHelper2) `main`, **.NET 10** (`net10.0-windows`, x64). Works on maintained community forks on the same API/target.
+GameHelper2 lightweight on-screen health bars: textured HP bars (gradient / circle-dot), POI monster configs, town/hideout toggles. Fork of Reynbow/simplebars; GameHelper2 port by MordWraith. Disable the built-in HealthBars plugin when using this. Bar textures are included in the repo. Read-only overlay — no input automation.
 
-### What it does (PoE2)
+Build from source only (no prebuilt DLL). Clone into Plugins/SimpleBars inside your GameHelper2 tree, then dotnet build GameHelper and the plugin. Enable it under GameHelper -> Plugins.
 
-Lightweight on-screen **health bars** for GameHelper:
+Compatible with Gordin GameHelper2 main, .NET 10 (net10.0-windows, x64). Tested on upstream main @ 4f6fd2a (June 2026); should work on community forks using the same API.
 
-- Textured HP bars over monsters (gradient / circle-dot modes)
-- POI monster configs, town/hideout toggles
-- **Disable the built-in HealthBars plugin** when using SimpleBars
+Feedback / feature requests: this thread. Crashes or install issues: #help with tag plugin.
 
-Read-only overlay — no input automation.
-
-### Install (source only — no prebuilt DLL)
-
-1. Clone [GameHelper2](https://github.com/Gordin/GameHelper2)
-2. Clone this plugin into `Plugins/SimpleBars`:
-   ```
-   git clone https://github.com/MordWraith/SimpleBars.git Plugins/SimpleBars
-   ```
-3. Build:
-   ```
-   dotnet build GameHelper/GameHelper.csproj -c Release
-   dotnet build Plugins/SimpleBars/SimpleBars.csproj -c Release
-   ```
-4. Enable **SimpleBars** in GameHelper → Plugins (disable **HealthBars**)
-
-Full README: https://github.com/MordWraith/SimpleBars
-
-### Config folder
-
-- `config/settings.txt` — bar display options (JSON)
-- `Textures/` — bar PNG assets (included in repo)
-
-### v1.0.0
-
-- Initial GameHelper2 community release (fork port)
-
-### Support
-
-- Feedback / feature requests: **this thread**
-- Crashes / GameHelper install issues: `#help` with tag **`plugin`**
-
-### Disclaimer
-
-Community third-party plugin. Use at your own risk. Not affiliated with GGG. Only install from trusted sources.
+Community third-party plugin, not affiliated with GGG. Use at your own risk; only build from the linked source.

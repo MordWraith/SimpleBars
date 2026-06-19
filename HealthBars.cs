@@ -192,7 +192,7 @@ namespace SimpleBars
                 return;
             }
 
-            if (Core.States.InGameStateObject.GameUi.ShouldHideWorldSpaceBars)
+            if (WorldSpaceBarVisibility.ShouldHide(Core.States.InGameStateObject.GameUi))
             {
                 return;
             }
