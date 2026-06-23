@@ -5,7 +5,7 @@ namespace SimpleBars
     using GameHelper.RemoteObjects.States.InGameStateObjects;
 
     /// <summary>
-    ///     Hides world-space bars when fullscreen map UIs are open (Gordin + community forks).
+    /// Hides world-space bars when fullscreen map UIs are open (Gordin and community forks).
     /// </summary>
     internal static class WorldSpaceBarVisibility
     {
